@@ -1,2 +1,2 @@
-# -omputer-Networks-
+# Computer-Networks
 🎓: BMSTU Computer Networks Course
