@@ -1,27 +1,22 @@
 import socket
-import sys
+import argparse
 
-host = 'localhost'
-port = 8800
-address = (host,port)
+our_socket = socket.socket()
+host = '127.0.0.1'
+port = 12345
 
-udp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-udp_socket.connect(address)
+parser = argparse.ArgumentParser(description='Send files over TCP')
+parser.add_argument('filename', metavar='filename', type=str,
+                    help='a file to send')
 
-
-data = input('Write to server: ')
-if not data :
-    udp_socket.close()
-    sys.exit(1)
-
-# encode recodes the entered data in bytes, decode - back
-data = str.encode(data)
-udp_socket.send(data)
-data = bytes.decode(data)
-
-data = udp_socket.recv(1024)
-data = data.decode("ascii")
-print(data)
-
-
-udp_socket.close()
+our_socket.connect((host, port))
+args = parser.parse_args()
+with open(args.filename, 'rb') as input_file:
+    line = 1
+    while line:
+        line = input_file.read(1024)
+        print('Sending...')
+        our_socket.send(line)
+    input_file.close()
+    our_socket.close()
+exit()
