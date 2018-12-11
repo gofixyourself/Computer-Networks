@@ -14,6 +14,5 @@
 | [6. SMTP](https://github.com/gofixyourself/Computer-Networks/tree/master/SMTP)  |:white_check_mark:|
 
 ## Legend:
-* :white_check_mark: — *Labs done*
-* :no_good: — *Passed, but I want to rewrite this*
+* :white_check_mark: — *Lab done*
 * :soon: — *In process*
