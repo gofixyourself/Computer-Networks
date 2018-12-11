@@ -11,6 +11,7 @@
 | [3. UDP](https://github.com/gofixyourself/Computer-Networks/tree/master/UDP)  |:white_check_mark:|
 | [4. Token Ring](https://github.com/gofixyourself/Computer-Networks/tree/master/Token) |:white_check_mark:|
 | [5. ARP](https://github.com/gofixyourself/Computer-Networks/tree/master/Maps) |:white_check_mark:|
+| [6. SMTP](https://github.com/gofixyourself/Computer-Networks/tree/master/SMTP)  |:white_check_mark:|
 
 ## Legend:
 * :white_check_mark: — *Labs done*
