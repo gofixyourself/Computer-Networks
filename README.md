@@ -1,6 +1,6 @@
 # Computer-Networks
 
-    4th course, 7th semester
+    4th year, 7th semester
 
     Software Engineering Department Course, Bauman Moscow State Technical University
 
